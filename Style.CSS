@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.progress {
+    width: 98.75vw;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    height: 2px;
+    background-color: rgb(231, 99, 99);
+    animation: progress-bar 1s ease-in 1 forwards;
+    overflow-x: hidden;
+
+}
+
+@keyframes progress-bar {
+
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 98.75vw;
+    }
+}
+
+.container nav img {
+    width: 47px;
+    height: 42px;
+}
+
+.initial-image {
+    width: 45vw;
+    object-fit: contain;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 20px gray);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.intro {
+    font-size: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 0 gray;
+    animation: flashing-intro 3s infinite;
+    
+}
+@keyframes flashing-intro {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }      
+}
+
+.carousel-inner {
+    height: 400px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 3px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 2px gray;
+}
+
+.btnR {
+    padding: 3px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 2px gray;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.head {
+    font-size: 30px;
+}
+
+
+.Location {
+    display: flex;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.intro-end{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: #fff;
+    width: 98vw;
+    
+}
+
+footer {
+    width: 98vw;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.about {
+    align-items: center;
+    display: flex;
+}
+
+.note {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+    min-height: 91.4vh;
+}
+
